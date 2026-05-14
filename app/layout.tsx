@@ -26,6 +26,9 @@ const SITE_URL = 'https://www.solidem.fr';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  verification: {
+    google: 'JQ3S0BqxUk6f9pMnHUceJuobypFcdlk9kYkcVwFYybo',
+  },
   title: {
     default: 'SOLIDEM | Déconstruction, Dépollution, Terrassement & VRD – Deuil-la-Barre (95)',
     template: '%s | SOLIDEM',
