@@ -56,13 +56,13 @@ const entryItemVariants: Variants = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 0.65, ease: 'easeOut' },
+    transition: { duration: 0.65, ease: 'easeOut' as const },
   },
 };
 
 const tabContentVariants: Variants = {
   hidden:  { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.4, ease: 'easeOut' } },
+  visible: { opacity: 1, transition: { duration: 0.4, ease: 'easeOut' as const } },
   exit:    { opacity: 0, transition: { duration: 0.18 } },
 };
 
