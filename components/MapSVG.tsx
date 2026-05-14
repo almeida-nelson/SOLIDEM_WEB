@@ -29,9 +29,9 @@ function ringToD(ring: Ring): string {
 
 function featureToPath(f: GeoFeature): string {
   if (f.geometry.type === 'Polygon') {
-    return (f.geometry.coordinates as Ring[][]).map(ringToD).join(' ')
+    return (f.geometry.coordinates as Ring[]).map(ringToD).join(' ')
   }
-  return (f.geometry.coordinates as Ring[][][])
+  return (f.geometry.coordinates as Ring[][])
     .flatMap(poly => poly.map(ringToD))
     .join(' ')
 }
